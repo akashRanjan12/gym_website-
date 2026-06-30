@@ -43,7 +43,26 @@ import { initBmiCalculator } from './components/bmiCalculator.js';
 import { initContactForm } from './components/contactForm.js';
 
 document.addEventListener("DOMContentLoaded", () => {
-  // 1. Initialize Icons
+  // 1. Initialize Sub-Components
+  initSchedule();
+  initGallery();
+  initTestimonials();
+  initBmiCalculator();
+  initContactForm();
+
+  // 2. Navigation Sticky Header & Progress Bar
+  setupHeaderAndScrollProgress();
+
+  // 3. Custom Mouse Follower Cursor (Desktop)
+  setupCustomCursor();
+
+  // 4. Interactive Dark Theme Map (Leaflet)
+  setupInteractiveMap();
+
+  // 5. GSAP Animations
+  setupAnimations();
+
+  // 6. Initialize Icons (after all dynamic content has rendered)
   createIcons({
     icons: {
       Zap, Dumbbell, Shield, Target, Award, User, Calendar, Eye, 
@@ -51,25 +70,6 @@ document.addEventListener("DOMContentLoaded", () => {
       Twitter, Youtube, Instagram, Facebook
     }
   });
-
-  // 2. Initialize Sub-Components
-  initSchedule();
-  initGallery();
-  initTestimonials();
-  initBmiCalculator();
-  initContactForm();
-
-  // 3. Navigation Sticky Header & Progress Bar
-  setupHeaderAndScrollProgress();
-
-  // 4. Custom Mouse Follower Cursor (Desktop)
-  setupCustomCursor();
-
-  // 5. Interactive Dark Theme Map (Leaflet)
-  setupInteractiveMap();
-
-  // 6. GSAP Animations
-  setupAnimations();
 });
 
 // Preloader Fade Out & Entrance Animations
@@ -264,14 +264,14 @@ function setupAnimations() {
   stats.forEach(stat => {
     const target = parseInt(stat.getAttribute("data-target"), 10);
     
-    gsap.from(stat, {
+    gsap.to(stat, {
       scrollTrigger: {
         trigger: stat,
         start: "top 85%",
         toggleActions: "play none none none"
       },
       duration: 2,
-      textContent: 0,
+      textContent: target,
       snap: { textContent: 1 },
       ease: "power2.out",
       onUpdate: function() {

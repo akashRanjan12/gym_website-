@@ -4,7 +4,7 @@
 import './style.css';
 
 // Import libraries
-import L from 'leaflet';
+import * as L from 'leaflet';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { 
@@ -44,32 +44,36 @@ import { initContactForm } from './components/contactForm.js';
 
 document.addEventListener("DOMContentLoaded", () => {
   // 1. Initialize Sub-Components
-  initSchedule();
-  initGallery();
-  initTestimonials();
-  initBmiCalculator();
-  initContactForm();
+  try { initSchedule(); } catch (e) { console.error("initSchedule failed:", e); }
+  try { initGallery(); } catch (e) { console.error("initGallery failed:", e); }
+  try { initTestimonials(); } catch (e) { console.error("initTestimonials failed:", e); }
+  try { initBmiCalculator(); } catch (e) { console.error("initBmiCalculator failed:", e); }
+  try { initContactForm(); } catch (e) { console.error("initContactForm failed:", e); }
 
   // 2. Navigation Sticky Header & Progress Bar
-  setupHeaderAndScrollProgress();
+  try { setupHeaderAndScrollProgress(); } catch (e) { console.error("setupHeaderAndScrollProgress failed:", e); }
 
   // 3. Custom Mouse Follower Cursor (Desktop)
-  setupCustomCursor();
+  try { setupCustomCursor(); } catch (e) { console.error("setupCustomCursor failed:", e); }
 
   // 4. Interactive Dark Theme Map (Leaflet)
-  setupInteractiveMap();
+  try { setupInteractiveMap(); } catch (e) { console.error("setupInteractiveMap failed:", e); }
 
   // 5. GSAP Animations
-  setupAnimations();
+  try { setupAnimations(); } catch (e) { console.error("setupAnimations failed:", e); }
 
   // 6. Initialize Icons (after all dynamic content has rendered)
-  createIcons({
-    icons: {
-      Zap, Dumbbell, Shield, Target, Award, User, Calendar, Eye, 
-      ArrowLeft, ArrowRight, MapPin, Phone, Mail, Clock, Plus, Minus, Check,
-      Twitter, Youtube, Instagram, Facebook
-    }
-  });
+  try {
+    createIcons({
+      icons: {
+        Zap, Dumbbell, Shield, Target, Award, User, Calendar, Eye, 
+        ArrowLeft, ArrowRight, MapPin, Phone, Mail, Clock, Plus, Minus, Check,
+        Twitter, Youtube, Instagram, Facebook
+      }
+    });
+  } catch (e) {
+    console.error("createIcons failed:", e);
+  }
 });
 
 // Preloader Fade Out & Entrance Animations

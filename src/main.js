@@ -302,7 +302,7 @@ function triggerHeroEntrance() {
 
   tl.from(".hero-title", {
     y: 50,
-    opacity: 0,
+    opacity: 1,
     duration: 1,
     ease: "power3.out",
   })
@@ -310,7 +310,7 @@ function triggerHeroEntrance() {
       ".hero-subtitle",
       {
         y: 30,
-        opacity: 0,
+        opacity: 1,
         duration: 0.8,
         ease: "power3.out",
       },
@@ -320,7 +320,7 @@ function triggerHeroEntrance() {
       ".hero-ctas .btn",
       {
         scale: 0.8,
-        opacity: 0,
+        opacity: 1,
         stagger: 0.2,
         duration: 0.6,
         ease: "back.out(1.7)",
@@ -331,7 +331,7 @@ function triggerHeroEntrance() {
       ".hero-scroll-indicator",
       {
         y: -20,
-        opacity: 0,
+        opacity: 1,
         duration: 0.5,
         ease: "power2.out",
       },

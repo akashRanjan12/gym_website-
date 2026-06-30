@@ -348,6 +348,29 @@ function setupAnimations() {
     ease: "power2.out"
   });
 
+  // About Us split card entrances
+  gsap.from(".about-content", {
+    scrollTrigger: {
+      trigger: ".about-section",
+      start: "top 75%"
+    },
+    x: -50,
+    opacity: 0,
+    duration: 0.8,
+    ease: "power3.out"
+  });
+  
+  gsap.from(".about-image-showcase", {
+    scrollTrigger: {
+      trigger: ".about-section",
+      start: "top 75%"
+    },
+    x: 50,
+    opacity: 0,
+    duration: 0.8,
+    ease: "power3.out"
+  });
+
   // BMI calculator split card entrances
   gsap.from(".bmi-info-content", {
     scrollTrigger: {

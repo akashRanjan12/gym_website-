@@ -524,7 +524,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('/src/assets/hero_bg.png');
+  background-image: url('./assets/hero_bg.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -2327,5 +2327,117 @@ img {
     flex-direction: column;
     gap: 10px;
     text-align: center;
+  }
+}
+
+/* About Section Styles */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-text-highlight {
+  font-family: var(--font-accent);
+  font-size: 20px;
+  color: var(--color-yellow);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  color: var(--text-gray);
+  line-height: 1.8;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.core-values-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.value-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.value-icon {
+  width: 44px;
+  height: 44px;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--card-border);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-red);
+  flex-shrink: 0;
+}
+
+.value-info h4 {
+  font-family: var(--font-accent);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--text-white);
+  margin-bottom: 6px;
+}
+
+.value-info p {
+  font-size: 12px;
+  color: var(--text-gray);
+  line-height: 1.5;
+}
+
+.about-image-card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--card-border);
+  box-shadow: var(--glow-card);
+}
+
+.about-showcase-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-floating-badge {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  background-color: var(--color-yellow);
+  color: var(--bg-primary);
+  padding: 16px 24px;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: var(--glow-yellow);
+  display: flex;
+  flex-direction: column;
+}
+
+.badge-num {
+  font-family: var(--font-headings);
+  font-size: 32px;
+  line-height: 1;
+}
+
+.badge-lbl {
+  font-family: var(--font-accent);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 4px;
+}
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
 }

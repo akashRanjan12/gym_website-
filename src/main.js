@@ -80,6 +80,8 @@ window.addEventListener("load", () => {
     setTimeout(() => {
       // Trigger Hero entrance animation after preloader fades
       triggerHeroEntrance();
+      // Recalculate ScrollTrigger thresholds after all assets load
+      ScrollTrigger.refresh();
     }, 400);
   }
 });
@@ -301,7 +303,7 @@ function setupAnimations() {
   gsap.from(".class-card", {
     scrollTrigger: {
       trigger: ".classes-grid",
-      start: "top 75%"
+      start: "top 92%"
     },
     y: 60,
     opacity: 0,
@@ -314,7 +316,7 @@ function setupAnimations() {
   gsap.from(".pricing-card", {
     scrollTrigger: {
       trigger: ".pricing-grid",
-      start: "top 75%"
+      start: "top 92%"
     },
     y: 60,
     opacity: 0,
@@ -327,7 +329,7 @@ function setupAnimations() {
   gsap.from(".trainer-card", {
     scrollTrigger: {
       trigger: ".trainers-grid",
-      start: "top 75%"
+      start: "top 92%"
     },
     y: 60,
     opacity: 0,
@@ -340,7 +342,7 @@ function setupAnimations() {
   gsap.from(".gallery-item", {
     scrollTrigger: {
       trigger: "#galleryGrid",
-      start: "top 75%"
+      start: "top 92%"
     },
     scale: 0.9,
     opacity: 0,
@@ -353,7 +355,7 @@ function setupAnimations() {
   gsap.from(".about-content", {
     scrollTrigger: {
       trigger: ".about-section",
-      start: "top 75%"
+      start: "top 92%"
     },
     x: -50,
     opacity: 0,
@@ -364,7 +366,7 @@ function setupAnimations() {
   gsap.from(".about-image-showcase", {
     scrollTrigger: {
       trigger: ".about-section",
-      start: "top 75%"
+      start: "top 92%"
     },
     x: 50,
     opacity: 0,
@@ -376,7 +378,7 @@ function setupAnimations() {
   gsap.from(".bmi-info-content", {
     scrollTrigger: {
       trigger: ".bmi-grid",
-      start: "top 75%"
+      start: "top 92%"
     },
     x: -50,
     opacity: 0,
@@ -387,7 +389,7 @@ function setupAnimations() {
   gsap.from(".bmi-calculator-box", {
     scrollTrigger: {
       trigger: ".bmi-grid",
-      start: "top 75%"
+      start: "top 92%"
     },
     x: 50,
     opacity: 0,
@@ -399,7 +401,7 @@ function setupAnimations() {
   gsap.from(".blog-card", {
     scrollTrigger: {
       trigger: ".blog-grid",
-      start: "top 75%"
+      start: "top 92%"
     },
     y: 50,
     opacity: 0,
@@ -412,7 +414,7 @@ function setupAnimations() {
   gsap.from(".location-info-card", {
     scrollTrigger: {
       trigger: ".location-grid",
-      start: "top 75%"
+      start: "top 92%"
     },
     x: -50,
     opacity: 0,
@@ -423,7 +425,7 @@ function setupAnimations() {
   gsap.from(".map-container-box", {
     scrollTrigger: {
       trigger: ".location-grid",
-      start: "top 75%"
+      start: "top 92%"
     },
     x: 50,
     opacity: 0,
@@ -435,7 +437,7 @@ function setupAnimations() {
   gsap.from(".contact-form-intro", {
     scrollTrigger: {
       trigger: ".contact-grid",
-      start: "top 75%"
+      start: "top 92%"
     },
     x: -50,
     opacity: 0,
@@ -446,7 +448,7 @@ function setupAnimations() {
   gsap.from(".contact-form-wrapper", {
     scrollTrigger: {
       trigger: ".contact-grid",
-      start: "top 75%"
+      start: "top 92%"
     },
     x: 50,
     opacity: 0,

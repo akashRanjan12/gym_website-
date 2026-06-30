@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IRON PEAK GYM | Forge Your Inner Beast</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Iron Peak Gym is a premium, high-intensity training facility offering elite personal training, strength coaching, HIIT, boxing, and yoga. Join the beast forge today.">
+  <meta name="keywords" content="gym, fitness, personal training, powerlifting, HIIT, boxing, yoga, weight loss, muscle gain, Iron Peak Gym">
+  <meta name="author" content="Iron Peak Gym">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="IRON PEAK GYM | Forge Your Inner Beast">
+  <meta property="og:description" content="Train like never before. Experience state-of-the-art equipment, elite coaches, and an intense community at Iron Peak.">
+  <meta property="og:image" content="/src/assets/hero_bg.png">
+  <meta property="og:url" content="https://ironpeakgym.com">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="IRON PEAK GYM | Forge Your Inner Beast">
+  <meta property="twitter:description" content="Train like never before. Experience state-of-the-art equipment, elite coaches, and an intense community at Iron Peak.">
+  <meta property="twitter:image" content="/src/assets/hero_bg.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@300;400;600;700&family=Oswald:wght@400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>">
+</head>
+<body>
+
+  <!-- Preloader Screen -->
+  <div id="preloader" class="preloader">
+    <div class="preloader-content">
+      <div class="loader-logo">
+        <span class="text-red">IRON</span>
+        <span class="text-yellow">PEAK</span>
+      </div>
+      <div class="loader-bar-container">
+        <div class="loader-bar"></div>
+      </div>
+      <div class="loader-text">PREPARING FORGE...</div>
+    </div>
+  </div>
+
+  <!-- Custom Mouse Follower Cursor (Desktop) -->
+  <div class="custom-cursor"></div>
+  <div class="custom-cursor-dot"></div>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="scrollBar"></div>
+  </div>
+
+  <!-- 1. Sticky Navigation Bar -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-icon">🔥</span>
+        <span class="logo-text">IRON <span class="accent-text">PEAK</span></span>
+      </a>
+      <nav class="nav-links-container" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#classes" class="nav-link">Classes</a>
+        <a href="#programs" class="nav-link">Programs</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#schedule" class="nav-link">Schedule</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-cta">Join Now</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-bg-overlay"></div>
+    <div class="container hero-content">
+      <h1 class="hero-title">
+        FORGE YOUR<br>
+        <span class="gradient-text">INNER BEAST</span>
+      </h1>
+      <p class="hero-subtitle">TRAIN LIKE NEVER BEFORE. NO EXCUSES. JUST RESULTS.</p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-primary btn-lg pulse-btn">Start Training</a>
+        <a href="#classes" class="btn btn-outline btn-lg">Explore Classes</a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>SCROLL DOWN</span>
+      <i data-lucide="arrow-down" class="indicator-arrow"></i>
+    </div>
+  </section>
+
+  <!-- 3. Stats Counter Section -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-box" data-aos="fade-up">
+          <div class="stat-number-wrapper">
+            <span class="stat-number" data-target="500">0</span><span class="stat-plus">+</span>
+          </div>
+          <p class="stat-label">Active Members</p>
+        </div>
+        <div class="stat-box" data-aos="fade-up" data-aos-delay="100">
+          <div class="stat-number-wrapper">
+            <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
+          </div>
+          <p class="stat-label">Years Experience</p>
+        </div>
+        <div class="stat-box" data-aos="fade-up" data-aos-delay="200">
+          <div class="stat-number-wrapper">
+            <span class="stat-number" data-target="50">0</span><span class="stat-plus">+</span>
+          </div>
+          <p class="stat-label">Classes Weekly</p>
+        </div>
+        <div class="stat-box" data-aos="fade-up" data-aos-delay="300">
+          <div class="stat-number-wrapper">
+            <span class="stat-number" data-target="95">0</span><span class="stat-plus">%</span>
+          </div>
+          <p class="stat-label">Satisfaction Rate</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Classes Section -->
+  <section id="classes" class="classes-section section-padding">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tagline">OUR CLASSES</span>
+        <h2 class="section-title">CHOOSE YOUR WEAPON</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="classes-grid">
+        <!-- Class 1: HIIT -->
+        <div class="class-card red-theme" data-aos="fade-up">
+          <div class="class-img-container">
+            <img src="/src/assets/class_hiit.png" alt="HIIT Training" class="class-img" loading="lazy">
+            <div class="class-badge">HIIT</div>
+          </div>
+          <div class="class-body">
+            <div class="class-icon-box">
+              <i data-lucide="zap"></i>
+            </div>
+            <h3 class="class-name">HIIT Training</h3>
+            <p class="class-desc">High-intensity intervals designed to burn maximum calories and boost your cardiovascular endurance.</p>
+            <div class="class-details">
+              <span><i data-lucide="clock"></i> 45 Mins</span>
+              <span><i data-lucide="award"></i> Intermediate</span>
+            </div>
+            <a href="#contact" class="btn btn-outline btn-block btn-class-book">Book Now</a>
+          </div>
+        </div>
+
+        <!-- Class 2: Powerlifting -->
+        <div class="class-card yellow-theme" data-aos="fade-up" data-aos-delay="100">
+          <div class="class-img-container">
+            <img src="/src/assets/class_powerlifting.png" alt="Powerlifting" class="class-img" loading="lazy">
+            <div class="class-badge">STRENGTH</div>
+          </div>
+          <div class="class-body">
+            <div class="class-icon-box">
+              <i data-lucide="dumbbell"></i>
+            </div>
+            <h3 class="class-name">Powerlifting</h3>
+            <p class="class-desc">Master the squat, bench press, and deadlift. Perfect your form and build absolute raw power.</p>
+            <div class="class-details">
+              <span><i data-lucide="clock"></i> 60 Mins</span>
+              <span><i data-lucide="award"></i> Advanced</span>
+            </div>
+            <a href="#contact" class="btn btn-outline btn-block btn-class-book">Book Now</a>
+          </div>
+        </div>
+
+        <!-- Class 3: Yoga & Flexibility -->
+        <div class="class-card dark-theme" data-aos="fade-up" data-aos-delay="200">
+          <div class="class-img-container">
+            <img src="/src/assets/class_yoga.png" alt="Yoga & Flexibility" class="class-img" loading="lazy">
+            <div class="class-badge">MIND & BODY</div>
+          </div>
+          <div class="class-body">
+            <div class="class-icon-box">
+              <i data-lucide="shield"></i>
+            </div>
+            <h3 class="class-name">Yoga & Mobility</h3>
+            <p class="class-desc">Enhance flexibility, core strength, and recovery while centering your mind for peak performance.</p>
+            <div class="class-details">
+              <span><i data-lucide="clock"></i> 50 Mins</span>
+              <span><i data-lucide="award"></i> All Levels</span>
+            </div>
+            <a href="#contact" class="btn btn-outline btn-block btn-class-book">Book Now</a>
+          </div>
+        </div>
+
+        <!-- Class 4: Boxing -->
+        <div class="class-card red-theme" data-aos="fade-up">
+          <div class="class-img-container">
+            <img src="/src/assets/class_hiit.png" alt="Boxing" class="class-img" loading="lazy">
+            <div class="class-badge">COMBAT</div>
+          </div>
+          <div class="class-body">
+            <div class="class-icon-box">
+              <i data-lucide="target"></i>
+            </div>
+            <h3 class="class-name">Boxing / Combat</h3>
+            <p class="class-desc">Learn boxing fundamentals, heavy bag drills, and speed work for intense conditioning and strength.</p>
+            <div class="class-details">
+              <span><i data-lucide="clock"></i> 45 Mins</span>
+              <span><i data-lucide="award"></i> Intermediate</span>
+            </div>
+            <a href="#contact" class="btn btn-outline btn-block btn-class-book">Book Now</a>
+          </div>
+        </div>
+
+        <!-- Class 5: CrossFit -->
+        <div class="class-card yellow-theme" data-aos="fade-up" data-aos-delay="100">
+          <div class="class-img-container">
+            <img src="/src/assets/class_powerlifting.png" alt="CrossFit" class="class-img" loading="lazy">
+            <div class="class-badge">ATHLETIC</div>
+          </div>
+          <div class="class-body">
+            <div class="class-icon-box">
+              <i data-lucide="award"></i>
+            </div>
+            <h3 class="class-name">CrossFit</h3>
+            <p class="class-desc">Constantly varied, high-intensity functional movements that challenge every aspect of your fitness.</p>
+            <div class="class-details">
+              <span><i data-lucide="clock"></i> 60 Mins</span>
+              <span><i data-lucide="award"></i> Advanced</span>
+            </div>
+            <a href="#contact" class="btn btn-outline btn-block btn-class-book">Book Now</a>
+          </div>
+        </div>
+
+        <!-- Class 6: Personal Training -->
+        <div class="class-card dark-theme" data-aos="fade-up" data-aos-delay="200">
+          <div class="class-img-container">
+            <img src="/src/assets/class_yoga.png" alt="Personal Training" class="class-img" loading="lazy">
+            <div class="class-badge">CUSTOM</div>
+          </div>
+          <div class="class-body">
+            <div class="class-icon-box">
+              <i data-lucide="user"></i>
+            </div>
+            <h3 class="class-name">1-on-1 Coaching</h3>
+            <p class="class-desc">Get custom tailored workouts, nutrition planning, and dedicated accountability from our top coaches.</p>
+            <div class="class-details">
+              <span><i data-lucide="clock"></i> Tailored</span>
+              <span><i data-lucide="award"></i> All Levels</span>
+            </div>
+            <a href="#contact" class="btn btn-outline btn-block btn-class-book">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Membership Plans -->
+  <section id="programs" class="pricing-section section-padding bg-dark-secondary">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tagline">MEMBERSHIPS</span>
+        <h2 class="section-title">UNLEASH YOUR POTENTIAL</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Basic Plan -->
+        <div class="pricing-card" data-aos="fade-up">
+          <div class="pricing-header">
+            <h3 class="plan-name">BASIC FORGE</h3>
+            <div class="plan-price">
+              <span class="currency">$</span>
+              <span class="price-val">29</span>
+              <span class="period">/mo</span>
+            </div>
+          </div>
+          <div class="pricing-body">
+            <ul class="plan-features">
+              <li><i data-lucide="check" class="text-red"></i> Access to Gym Facilities</li>
+              <li><i data-lucide="check" class="text-red"></i> Locker Room Access</li>
+              <li><i data-lucide="check" class="text-red"></i> Free High-Speed WiFi</li>
+              <li class="disabled"><i data-lucide="minus"></i> 5+ Classes Weekly</li>
+              <li class="disabled"><i data-lucide="minus"></i> Personal Coach Consulting</li>
+              <li class="disabled"><i data-lucide="minus"></i> Nutrition & Diet Plans</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline btn-block">Get Started</a>
+          </div>
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="100">
+          <div class="pricing-badge">MOST POPULAR</div>
+          <div class="pricing-header">
+            <h3 class="plan-name">IRON PREMIUM</h3>
+            <div class="plan-price">
+              <span class="currency">$</span>
+              <span class="price-val">49</span>
+              <span class="period">/mo</span>
+            </div>
+          </div>
+          <div class="pricing-body">
+            <ul class="plan-features">
+              <li><i data-lucide="check" class="text-yellow"></i> Unlimited Gym Access</li>
+              <li><i data-lucide="check" class="text-yellow"></i> Locker Room & Sauna</li>
+              <li><i data-lucide="check" class="text-yellow"></i> 15+ Classes Weekly</li>
+              <li><i data-lucide="check" class="text-yellow"></i> Custom Nutrition Guideline</li>
+              <li><i data-lucide="check" class="text-yellow"></i> 1 Free Trainer Session/mo</li>
+              <li class="disabled"><i data-lucide="minus"></i> VIP Gym Lounge</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary btn-block">Unleash Now</a>
+          </div>
+        </div>
+
+        <!-- Elite Plan -->
+        <div class="pricing-card elite" data-aos="fade-up" data-aos-delay="200">
+          <div class="pricing-header">
+            <h3 class="plan-name">PEAK ELITE</h3>
+            <div class="plan-price">
+              <span class="currency">$</span>
+              <span class="price-val">89</span>
+              <span class="period">/mo</span>
+            </div>
+          </div>
+          <div class="pricing-body">
+            <ul class="plan-features">
+              <li><i data-lucide="check" class="text-red"></i> 24/7 Unlimited Access</li>
+              <li><i data-lucide="check" class="text-red"></i> Full Classes Access (All)</li>
+              <li><i data-lucide="check" class="text-red"></i> Dedicated 1-on-1 Personal Trainer</li>
+              <li><i data-lucide="check" class="text-red"></i> Custom Nutrition & Body Scans</li>
+              <li><i data-lucide="check" class="text-red"></i> VIP Lounge & Free Guest Passes</li>
+              <li><i data-lucide="check" class="text-red"></i> Elite Merchandise Welcome Kit</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline btn-block">Claim Elite</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Trainers Section -->
+  <section class="trainers-section section-padding">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tagline">ELITE COACHES</span>
+        <h2 class="section-title">THE BEAST FORGERS</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="trainers-grid">
+        <!-- Trainer 1 -->
+        <div class="trainer-card" data-aos="fade-up">
+          <div class="trainer-img-wrapper">
+            <img src="/src/assets/trainer_1.png" alt="Marcus Steele" class="trainer-img">
+            <div class="trainer-socials">
+              <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+              <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+              <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+            </div>
+          </div>
+          <div class="trainer-info">
+            <span class="trainer-specialty">HEAD OF STRENGTH</span>
+            <h3 class="trainer-name">Marcus Steele</h3>
+            <p class="trainer-bio">CSCS certified strength specialist with 12+ years preparing national-level competitive powerlifters.</p>
+          </div>
+        </div>
+
+        <!-- Trainer 2 -->
+        <div class="trainer-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="trainer-img-wrapper">
+            <img src="/src/assets/trainer_2.png" alt="Sarah Connor" class="trainer-img">
+            <div class="trainer-socials">
+              <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+              <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+              <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+            </div>
+          </div>
+          <div class="trainer-info">
+            <span class="trainer-specialty">HIIT & ATHLETIC CONDITIONING</span>
+            <h3 class="trainer-name">Sarah Connor</h3>
+            <p class="trainer-bio">Former track athlete focused on athletic conditioning, explosive speed work, and intense HIIT.</p>
+          </div>
+        </div>
+
+        <!-- Trainer 3 -->
+        <div class="trainer-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="trainer-img-wrapper">
+            <img src="/src/assets/trainer_1.png" alt="Viktor Vance" class="trainer-img" style="filter: hue-rotate(45deg);">
+            <div class="trainer-socials">
+              <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+              <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+              <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+            </div>
+          </div>
+          <div class="trainer-info">
+            <span class="trainer-specialty">BOXING & COMBAT HEAD</span>
+            <h3 class="trainer-name">Viktor Vance</h3>
+            <p class="trainer-bio">Professional middleweight boxer with a passion for teaching speed, agility, and heavy bag conditioning.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Gallery Section -->
+  <section id="gallery" class="gallery-section section-padding bg-dark-secondary">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tagline">VISUAL TOUR</span>
+        <h2 class="section-title">THE IRON SANCTUARY</h2>
+        <div class="section-divider"></div>
+        
+        <!-- Filter Controls -->
+        <div class="gallery-filters">
+          <button class="gallery-filter-btn active" data-filter="all">ALL</button>
+          <button class="gallery-filter-btn" data-filter="equipment">EQUIPMENT</button>
+          <button class="gallery-filter-btn" data-filter="classes">CLASSES</button>
+          <button class="gallery-filter-btn" data-filter="facility">FACILITY</button>
+        </div>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Item 1 -->
+        <div class="gallery-item" data-category="equipment" data-aos="zoom-in">
+          <img src="/src/assets/gallery_1.png" alt="Premium dumbbell racks" class="gallery-img">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <span class="gallery-cat">EQUIPMENT</span>
+              <h4 class="gallery-item-title">Elite Dumbbell Forge</h4>
+            </div>
+            <button class="gallery-zoom-btn" aria-label="Zoom Image"><i data-lucide="eye"></i></button>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="gallery-item" data-category="classes" data-aos="zoom-in" data-aos-delay="100">
+          <img src="/src/assets/gallery_2.png" alt="Active conditioning class" class="gallery-img">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <span class="gallery-cat">CLASSES</span>
+              <h4 class="gallery-item-title">Functional Sled Training</h4>
+            </div>
+            <button class="gallery-zoom-btn" aria-label="Zoom Image"><i data-lucide="eye"></i></button>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="gallery-item" data-category="facility" data-aos="zoom-in" data-aos-delay="200">
+          <img src="/src/assets/hero_bg.png" alt="Squat racks facility area" class="gallery-img">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <span class="gallery-cat">FACILITY</span>
+              <h4 class="gallery-item-title">Olympic Squat Station</h4>
+            </div>
+            <button class="gallery-zoom-btn" aria-label="Zoom Image"><i data-lucide="eye"></i></button>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="gallery-item" data-category="equipment" data-aos="zoom-in">
+          <img src="/src/assets/class_powerlifting.png" alt="Competition deadlift setup" class="gallery-img">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <span class="gallery-cat">EQUIPMENT</span>
+              <h4 class="gallery-item-title">Competition Steel Plates</h4>
+            </div>
+            <button class="gallery-zoom-btn" aria-label="Zoom Image"><i data-lucide="eye"></i></button>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="gallery-item" data-category="classes" data-aos="zoom-in" data-aos-delay="100">
+          <img src="/src/assets/class_hiit.png" alt="HIIT battle rope session" class="gallery-img">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <span class="gallery-cat">CLASSES</span>
+              <h4 class="gallery-item-title">HIIT Zone Battle Ropes</h4>
+            </div>
+            <button class="gallery-zoom-btn" aria-label="Zoom Image"><i data-lucide="eye"></i></button>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="gallery-item" data-category="facility" data-aos="zoom-in" data-aos-delay="200">
+          <img src="/src/assets/class_yoga.png" alt="Yoga group stretching" class="gallery-img">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <span class="gallery-cat">FACILITY</span>
+              <h4 class="gallery-item-title">Mind & Mobility Studio</h4>
+            </div>
+            <button class="gallery-zoom-btn" aria-label="Zoom Image"><i data-lucide="eye"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Custom Lightbox Modal -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close Lightbox">&times;</button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous Image"><i data-lucide="arrow-left"></i></button>
+    <div class="lightbox-content-wrapper">
+      <img src="" alt="" class="lightbox-img" id="lightboxImg">
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+    <button class="lightbox-next" id="lightboxNext" aria-label="Next Image"><i data-lucide="arrow-right"></i></button>
+  </div>
+
+  <!-- 8. Schedule/Timetable Section -->
+  <section id="schedule" class="schedule-section section-padding">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tagline">CLASS CALENDAR</span>
+        <h2 class="section-title">WEEKLY SHIFT</h2>
+        <div class="section-divider"></div>
+        
+        <!-- Day Selector Tabs -->
+        <div class="schedule-tabs" id="scheduleTabs">
+          <button class="schedule-tab-btn active" data-day="monday">MON</button>
+          <button class="schedule-tab-btn" data-day="tuesday">TUE</button>
+          <button class="schedule-tab-btn" data-day="wednesday">WED</button>
+          <button class="schedule-tab-btn" data-day="thursday">THU</button>
+          <button class="schedule-tab-btn" data-day="friday">FRI</button>
+          <button class="schedule-tab-btn" data-day="saturday">SAT</button>
+        </div>
+      </div>
+
+      <!-- Schedule Panels Container -->
+      <div class="schedule-panel-container" id="schedulePanelContainer">
+        <!-- Panels will be generated dynamically by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- BONUS FEATURE: BMI / Body Fat Calculator -->
+  <section class="bmi-section section-padding bg-dark-secondary">
+    <div class="container">
+      <div class="bmi-grid">
+        <div class="bmi-info-content" data-aos="fade-right">
+          <span class="section-tagline">BODY ASSESSMENT</span>
+          <h2 class="section-title">CALCULATE YOUR BMI</h2>
+          <p class="section-desc">Body Mass Index (BMI) is a quick indicator of healthy weight ranges. Use this calculator as a baseline guide and consult our expert trainers for advanced body scans and target settings.</p>
+          
+          <div class="bmi-ranges">
+            <div class="bmi-range-box">
+              <span class="range-value">&lt; 18.5</span>
+              <span class="range-status">Underweight</span>
+            </div>
+            <div class="bmi-range-box healthy">
+              <span class="range-value">18.5 - 24.9</span>
+              <span class="range-status">Healthy Weight</span>
+            </div>
+            <div class="bmi-range-box warning">
+              <span class="range-value">25.0 - 29.9</span>
+              <span class="range-status">Overweight</span>
+            </div>
+            <div class="bmi-range-box danger">
+              <span class="range-value">30.0+</span>
+              <span class="range-status">Obese</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bmi-calculator-box" data-aos="fade-left">
+          <h3 class="calculator-title">CALCULATOR</h3>
+          <form id="bmiForm" class="bmi-form">
+            <div class="form-group-toggle">
+              <button type="button" class="unit-btn active" id="unitMetric">METRIC (KG/CM)</button>
+              <button type="button" class="unit-btn" id="unitImperial">IMPERIAL (LBS/IN)</button>
+            </div>
+            
+            <div class="form-group bmi-input-group">
+              <label for="bmiHeight" id="heightLabel">Height (cm)</label>
+              <input type="number" id="bmiHeight" required min="50" max="250" placeholder="e.g. 175">
+            </div>
+
+            <div class="form-group bmi-input-group">
+              <label for="bmiWeight" id="weightLabel">Weight (kg)</label>
+              <input type="number" id="bmiWeight" required min="10" max="300" placeholder="e.g. 70">
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Calculate Now</button>
+          </form>
+
+          <div class="bmi-result" id="bmiResult">
+            <div class="result-number" id="resultBmiVal">00.0</div>
+            <div class="result-feedback">
+              <h4>YOUR STATUS: <span id="resultBmiStatus" class="text-yellow">N/A</span></h4>
+              <p id="resultBmiAdvice">Enter weight & height to run computation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Testimonials Section -->
+  <section class="testimonials-section section-padding">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tagline">TESTIMONIALS</span>
+        <h2 class="section-title">WARRIOR SHED STORIES</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="testimonials-carousel-wrapper">
+        <div class="testimonials-carousel" id="testimonialCarousel">
+          <!-- Slide 1 -->
+          <div class="testimonial-slide active">
+            <div class="testimonial-content-card">
+              <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+              <p class="testimonial-quote">"Iron Peak Gym transformed not just my body, but my entire mindset. The coaching staff is incredibly knowledgeable, and the community drives you to push beyond your limits. Dropped 15 lbs of fat and put on solid strength!"</p>
+              <div class="testimonial-author">
+                <img src="/src/assets/trainer_2.png" alt="Jaxson Teller" class="author-img">
+                <div class="author-meta">
+                  <h4 class="author-name">Jaxson Teller</h4>
+                  <span class="author-achievement">Lost 15 lbs & Gained 10 lbs Muscle</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-content-card">
+              <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+              <p class="testimonial-quote">"The atmosphere here is pure motivation. No egos, just hard work and support. Powerlifting coaching by Marcus is world-class. I added 60 lbs to my deadlift in just 4 months of structured training!"</p>
+              <div class="testimonial-author">
+                <img src="/src/assets/trainer_1.png" alt="Clara Vance" class="author-img">
+                <div class="author-meta">
+                  <h4 class="author-name">Clara Vance</h4>
+                  <span class="author-achievement">Added 60 lbs to Deadlift Max</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-controls">
+          <button class="carousel-control-btn" id="prevTestimonial" aria-label="Previous Testimonial"><i data-lucide="arrow-left"></i></button>
+          <div class="carousel-indicators" id="carouselIndicators"></div>
+          <button class="carousel-control-btn" id="nextTestimonial" aria-label="Next Testimonial"><i data-lucide="arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. Blog/Resources Section -->
+  <section class="blog-section section-padding bg-dark-secondary">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tagline">RESOURCES</span>
+        <h2 class="section-title">THE IRON BLOCKS</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="blog-grid">
+        <!-- Blog Card 1 -->
+        <article class="blog-card" data-aos="fade-up">
+          <div class="blog-img-wrapper">
+            <img src="/src/assets/class_powerlifting.png" alt="Protein loading guide" class="blog-img">
+            <span class="blog-tag">NUTRITION</span>
+          </div>
+          <div class="blog-body">
+            <span class="blog-date"><i data-lucide="calendar"></i> June 28, 2026</span>
+            <h3 class="blog-title">The Ultimate Gym Protein Loading Strategy</h3>
+            <p class="blog-excerpt">Optimizing protein timing is critical for recovery and muscle growth. Learn how much you actually need...</p>
+            <a href="#" class="blog-link">Read Article <i data-lucide="arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- Blog Card 2 -->
+        <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="blog-img-wrapper">
+            <img src="/src/assets/class_hiit.png" alt="HIIT performance conditioning" class="blog-img">
+            <span class="blog-tag">FITNESS</span>
+          </div>
+          <div class="blog-body">
+            <span class="blog-date"><i data-lucide="calendar"></i> June 24, 2026</span>
+            <h3 class="blog-title">5 Key Mistakes Restricting HIIT Progress</h3>
+            <p class="blog-excerpt">Are you hitting plateaus in your interval training? Check if you're making these common pacing mistakes...</p>
+            <a href="#" class="blog-link">Read Article <i data-lucide="arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- Blog Card 3 -->
+        <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="blog-img-wrapper">
+            <img src="/src/assets/class_yoga.png" alt="Active rest strategy" class="blog-img">
+            <span class="blog-tag">RECOVERY</span>
+          </div>
+          <div class="blog-body">
+            <span class="blog-date"><i data-lucide="calendar"></i> June 18, 2026</span>
+            <h3 class="blog-title">Active Recovery: The Magic of Mobility</h3>
+            <p class="blog-excerpt">Rest days don't mean sitting on the couch. Active yoga & mobility sessions can double your training efficiency...</p>
+            <a href="#" class="blog-link">Read Article <i data-lucide="arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. Location & Hours (Split layout with Map) -->
+  <section id="about" class="location-section section-padding">
+    <div class="container">
+      <div class="location-grid">
+        <div class="location-info-card" data-aos="fade-right">
+          <span class="section-tagline">OUR HEADQUARTERS</span>
+          <h2 class="section-title">THE FORGE CHAMBER</h2>
+          <div class="section-divider"></div>
+          
+          <ul class="contact-details-list">
+            <li>
+              <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+              <div class="contact-txt">
+                <h4>LOCATION</h4>
+                <p>108 Peak Boulevard, Strength District, NY 10001</p>
+              </div>
+            </li>
+            <li>
+              <div class="contact-icon"><i data-lucide="clock"></i></div>
+              <div class="contact-txt">
+                <h4>OPERATING HOURS</h4>
+                <p>Mon - Fri: 5:00 AM - 10:00 PM<br>Sat - Sun: 7:00 AM - 8:00 PM</p>
+              </div>
+            </li>
+            <li>
+              <div class="contact-icon"><i data-lucide="phone"></i></div>
+              <div class="contact-txt">
+                <h4>CALL DIRECT</h4>
+                <p>+1 (555) 732-5-999</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="map-container-box" data-aos="fade-left">
+          <div id="map" class="interactive-map"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. Contact Section & Form -->
+  <section id="contact" class="contact-section section-padding bg-dark-secondary">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-form-intro" data-aos="fade-right">
+          <span class="section-tagline">GET IN TOUCH</span>
+          <h2 class="section-title">CLAIM YOUR FIRST SESSION FREE</h2>
+          <p class="section-desc">Drop your details below. A coach will contact you within 24 hours to schedule your free health consultation and facility tour. Step inside the forge.</p>
+          
+          <div class="whatsapp-btn-wrapper">
+            <a href="https://wa.me/15557325999" target="_blank" class="btn btn-whatsapp">
+              <span class="wa-icon">💬</span> Chat Live on WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper" data-aos="fade-left">
+          <!-- Floating Label Form -->
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group floating-group">
+                <input type="text" id="contactName" name="name" class="form-control" placeholder=" " required>
+                <label for="contactName">Full Name</label>
+                <span class="error-msg">Name is required</span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group floating-group">
+                <input type="email" id="contactEmail" name="email" class="form-control" placeholder=" " required>
+                <label for="contactEmail">Email Address</label>
+                <span class="error-msg">Enter a valid email</span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group floating-group">
+                <input type="tel" id="contactPhone" name="phone" class="form-control" placeholder=" " required pattern="[0-9\-+\s]{8,15}">
+                <label for="contactPhone">Phone Number</label>
+                <span class="error-msg">Enter a valid phone number</span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group select-group">
+                <select id="contactProgram" name="program" class="form-control" required>
+                  <option value="" disabled selected hidden></option>
+                  <option value="powerlifting">Powerlifting</option>
+                  <option value="hiit">HIIT & Strength</option>
+                  <option value="boxing">Boxing Conditioning</option>
+                  <option value="coaching">1-on-1 Personal Training</option>
+                </select>
+                <label for="contactProgram">Select Program Interest</label>
+                <span class="error-msg">Please select an option</span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group floating-group">
+                <textarea id="contactMessage" name="message" class="form-control" rows="4" placeholder=" "></textarea>
+                <label for="contactMessage">Your Message (Optional)</label>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block submit-btn" id="contactSubmitBtn">
+              <span class="btn-text">SUBMIT ENROLLMENT</span>
+              <span class="spinner" id="formSpinner"></span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13. Newsletter Signup Section -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-box">
+        <div class="newsletter-text-content">
+          <h3>JOIN THE IRON PEAK INTEL</h3>
+          <p>Get training tips, nutrition guide downloads, and exclusive local event invites weekly.</p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="Enter your email" required aria-label="Newsletter Email">
+          <button type="submit" class="btn btn-primary">SUBSCRIBE</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Toast Notification Center -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- 14. Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand-col">
+        <a href="#home" class="footer-logo">
+          <span class="logo-icon">🔥</span>
+          <span class="logo-text">IRON <span class="accent-text">PEAK</span></span>
+        </a>
+        <p class="brand-tagline">Forge your inner beast. A premium community-driven strength facility built to challenge limits, build character, and achieve physical transcendence.</p>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>NAVIGATION</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#classes">Classes</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>SUPPORT & LEGAL</h4>
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Membership FAQ</a></li>
+          <li><a href="#">Accessibility Statement</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social-col">
+        <h4>FOLLOW THE MONSTER</h4>
+        <div class="footer-social-icons">
+          <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+          <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+        </div>
+        <p class="footer-contact-direct">
+          <span>T: +1 (555) 732-5-999</span>
+          <span>E: forge@ironpeakgym.com</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>&copy; 2026 IRON PEAK GYM. ALL RIGHTS RESERVED.</p>
+        <p>Built with Intensity & Precision.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

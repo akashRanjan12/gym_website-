@@ -263,20 +263,21 @@ function setupAnimations() {
   const stats = document.querySelectorAll(".stat-number");
   stats.forEach(stat => {
     const target = parseInt(stat.getAttribute("data-target"), 10);
+    const obj = { val: 0 };
     
-    gsap.to(stat, {
+    gsap.to(obj, {
       scrollTrigger: {
         trigger: stat,
         start: "top 85%",
         toggleActions: "play none none none"
       },
+      val: target,
       duration: 2,
-      textContent: target,
-      snap: { textContent: 1 },
+      snap: { val: 1 },
       ease: "power2.out",
       onUpdate: function() {
         // Ensure values display cleanly
-        stat.textContent = Math.ceil(stat.textContent);
+        stat.textContent = Math.ceil(obj.val);
       }
     });
   });
